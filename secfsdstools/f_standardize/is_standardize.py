@@ -906,7 +906,13 @@ class IncomeStatementStandardizer(Standardizer):
                         original='WeightedAverageNumberOfLimitedPartnershipAndGeneralPartnershipUnitOutstandingBasicAndDiluted'),
             CopyTagRule(target='OutstandingShares',
                         original='WeightedAverageGeneralPartnershipUnitsOutstanding'),
-
+            CopyTagRule(target='OutstandingShares',
+                        original='CommonStockSharesIssued'),
+            CopyTagRule(target='OutstandingShares',
+                        original='CommonStockSharesOutstanding'),
+            CopyTagRule(target='OutstandingShares',
+                        original='CommonStockSharesAuthorized'),
+                        
             CopyTagRule(target='EarningsPerShare',
                         original='EarningsPerShareBasic'),
             CopyTagRule(target='EarningsPerShare',
